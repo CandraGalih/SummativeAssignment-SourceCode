@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABC Learning Center - My Courses</title>
+    <!-- Connector Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Poppins Font Link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icon Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- Font Link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- CSS Connector -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap Link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Starts -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">ABC<b>Learning Center</b></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Courses
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="course.html">My Courses</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="schedule.html"
+                    >Course Schedule</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                <li>
+                  <a class="dropdown-item" href="contactus.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="privacypolicy.html"
+                    >Privacy Policy</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Modal Starts -->
+          <!-- Button Login -->
+          <button
+            type="button"
+            class="btn btn-light"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Login
+          </button>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div id="loginModal" class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form id="loginForm" action="">
+                    <p class="hint-text text-center">
+                      Login with your social media account.
+                    </p>
+                    <div class="form-group social-btn clearfix">
+                      <!-- This URL is just an add-on and is not directly connected! -->
+                      <a
+                        href="https://accounts.google.com/v3/signin/identifier?dsh=S-435218315%3A1676352996483274&authuser=0&continue=https%3A%2F%2Fwww.google.co.id%2Fwebhp%3Ftab%3Dkw%26authuser%3D0&ec=GAlAmgQ&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession"
+                        class="btn btn-secondary google-btn float-left"
+                        ><i class="bi bi-google"></i> Google</a
+                      >
+                      <a
+                        href="https://www.facebook.com/"
+                        class="btn btn-secondary facebook-btn float-right"
+                        ><i class="bi bi-facebook"></i> Facebook</a
+                      >
+                    </div>
+                    <div class="or-seperator"><b>or</b></div>
+                    <br />
+                    <div class="mb-3">
+                      <input
+                        type="email"
+                        class="form-control text-start"
+                        name="email"
+                        id="email"
+                        aria-describedby="emailHelp"
+                        placeholder="Email"
+                        required
+                      />
+                      <div id="emailHelp" class="form-text">
+                        We'll never share your email with anyone else.
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <input
+                        type="password"
+                        class="form-control text-start"
+                        name="password"
+                        id="password"
+                        placeholder="Password"
+                        required
+                      />
+                    </div>
+                    <button
+                      onclick="loginValidation()"
+                      type="submit"
+                      class="btn btn-success"
+                    >
+                      Login
+                    </button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    onclick="location.href='administration.html'"
+                  >
+                    Edit Data
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Button Sign Up -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal2"
+          >
+            Sign Up
+          </button>
+          <div
+            class="modal fade"
+            id="exampleModal2"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Sign Up
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form class="signupForm" name="signupForm">
+                    <input type="hidden" name="id" id="id" />
+                    <p class="hint-text text-center">
+                      Fill in this form to create your account!
+                    </p>
+                    <div class="mb-3">
+                      <input
+                        name="name"
+                        type="text"
+                        class="form-control text-start"
+                        id="name"
+                        aria-describedby="nameHelp"
+                        placeholder="Name"
+                        required
+                      />
+                      <div id="emailHelp" class="form-text">
+                      </div>
+                    <div class="mb-3">
+                      <input
+                        name="email"
+                        type="email"
+                        class="form-control text-start"
+                        id="email"
+                        aria-describedby="emailHelp"
+                        placeholder="Email"
+                        required
+                        />
+                        <div id="emailHelp" class="form-text">
+                          We'll never share your email with anyone else.
+                        </div>
+                        <div class="mb-3">
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            id="gender"
+                            name="gender"
+                          >
+                            <option selected disabled>Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                      <input
+                        name="password"
+                        type="password"
+                        class="form-control text-start"
+                        id="password"
+                        placeholder="New Password"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <input
+                        name="confirmpass"
+                        type="password"
+                        class="form-control text-start"
+                        id="confirmPassword"
+                        placeholder=" Confirm Password"
+                        required
+                      />
+                      <div id="emailHelp" class="form-text">
+                        Make sure the password confirmation matches!
+                      </div>
+                    </div>
+                    <button
+                      onclick="save(), signup()"                      
+                      type="submit"
+                      class="btn btn-success"
+                    >
+                      Sign Up
+                    </button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    onclick="location.href='administration.html'"
+                  >
+                    Edit Data
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal End -->
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Content Start -->
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">.Net Document</a></li>
+        <li><a href="#tabs-2">Video Tutorial</a></li>
+      </ul>
+      <div id="tabs-1">
+        <h1>Programming In .Net</h1>
+      <div class="document text-center m-4">
+        <iframe
+          src="BasicNET.pdf"
+          frameborder="5"
+          width="90%"
+          height="520"
+        ></iframe>
+      </div>
+      </div>
+      <div id="tabs-2">
+        <h1>Video:</h1>
+      <div class="video-youtube text-center mt-4">
+        <iframe
+          width="80%"
+          height="450"
+          src="https://www.youtube.com/embed/Y8c1IHZs5qc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      </div>
+    </div>
+    <!-- Content End -->
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-6">
+          <h4>Company</h4>
+        </div>
+        <div class="col-2" style="text-align: right">
+          <h4>Social Media</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <h3 class="footer-brand">ABC<b>Learning Center</b></h3>
+          <i class="bi bi-c-circle"></i>
+          <span class="footer-copyright mt-4">2023 ABCLearning Center</span>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li>
+              <a class="footer-link" href="about.html">About Us</a>
+            </li>
+            <li>
+              <a class="footer-link" href="sitemap.html">Sitemap</a>
+            </li>
+            <li>
+              <a class="footer-link" href="privacypolicy.html"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- This URL is just an add-on and is not directly connected! -->
+        <div class="col-2" style="text-align: right">
+          <a href="https://www.instagram.com/accounts/login/"
+            ><i class="bi-f bi-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/"
+            ><i class="bi-f bi-facebook"></i
+          ></a>
+          <a href="https://github.com/login"><i class="bi-f bi-github"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- JavaScript Connector -->
+    <script src="script.js"></script>
+  </body>
+</html>
